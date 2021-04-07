@@ -19,7 +19,7 @@ add_library(ll
   src/stm32f1xx_ll_crc.c
   src/stm32f1xx_ll_adc.c)
 
-target_include_directories(ll PUBLIC inc)
+include_directories(inc)
 
 set(STM32_DEVICE_GROUP "STM32F103xB" CACHE STRING
  "Chip configuration as defined in stm32f1xx.h (default value for the bluepill)")
